@@ -1,0 +1,29 @@
+package com.example;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class CollectionPractice {
+
+	public static void main(String[] args) {
+		Map<String, Double> m = new LinkedHashMap<> ();
+		m.put("Papil" , 12.5220);
+		m.put("Sushil" , 15.5206);
+		m.put("Krishna" , 13.5698);
+		m.put("sushant" , 12.5378);
+		
+		System.out.println("Map Data : "+m);
+		System.out.println("-----------------------------------------------------------------------------");
+		for(Map.Entry<String,Double> mb : m.entrySet()) {
+			if(mb.getKey().equals("Papil")) {
+				System.out.println("Papil salary is : "+mb.getValue());
+			}else if(mb.getKey().equals("Krishna")) {
+				System.out.println("Krishna salary is : "+mb.getValue());
+			}
+			
+		}
+		
+	}
+
+}
